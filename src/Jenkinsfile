@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+  stages {
+    stage('Log Ant version info') {
+      steps {
+        sh 'ant -version'
+      }
+    }
+  }
+}
